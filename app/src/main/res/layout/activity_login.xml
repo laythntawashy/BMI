@@ -61,7 +61,6 @@
         android:drawableRight="@android:drawable/ic_menu_view"
         android:ems="10"
         android:hint="@string/et_Password_hint"
-        android:text="@string/password"
         android:inputType="textPassword"
         android:layoutDirection="ltr"
         android:password="true"

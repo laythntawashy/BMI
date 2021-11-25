@@ -33,4 +33,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_login2">LoginActivity2</string>
+
+    <!--  interface 4  -->
+    <string name="txt_Gender">"Gender"</string>
+
+
 </resources>
