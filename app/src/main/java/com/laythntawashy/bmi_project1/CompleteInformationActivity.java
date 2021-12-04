@@ -6,9 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class CompleteInformationActivity extends AppCompatActivity {
     Button save_date;
+    TextView value;
+    TextView value2;
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +27,29 @@ public class CompleteInformationActivity extends AppCompatActivity {
                 startActivity(add);
             }
         });
+
+        value = (TextView) findViewById(R.id.ed_txt_weigth);
+        value2 = (TextView) findViewById(R.id.ed_txt_langth);
+
+    }
+    public void increment(View v){
+        count++;
+        value.setText("" +count);
+    }
+    public void Decrement(View v){
+        if(count <= 0) count = 0;
+        else count--;
+
+        value.setText("" +count);
+    }
+    public void increment1(View v){
+        count++;
+        value2.setText("" +count);
+    }
+    public void Decrement1(View v){
+        if(count <= 0) count = 0;
+        else count--;
+
+        value2.setText("" +count);
     }
 }

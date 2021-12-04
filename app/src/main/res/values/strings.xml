@@ -37,5 +37,12 @@
     <!--  interface 4  -->
     <string name="txt_Gender">"Gender"</string>
 
+    <!--    spinner-->
+    <string-array name="category">
+        <item>Fish</item>
+        <item>Carbohydrates</item>
+        <item>Fruit</item>
+
+    </string-array>
 
 </resources>
