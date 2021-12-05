@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="ltr"
     tools:context=".Add_food_details">
 
     <Button
@@ -43,7 +44,7 @@
         android:text="Name"
         android:textAlignment="center"
         android:textColor="@color/ff21"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -58,7 +59,7 @@
         android:text="Category"
         android:textAlignment="center"
         android:textColor="@color/ff21"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.116"
@@ -73,7 +74,7 @@
         android:text="Calory"
         android:textAlignment="center"
         android:textColor="@color/ff21"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
@@ -87,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="Photo"
         android:textColor="@color/ff21"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -97,7 +98,7 @@
 
     <EditText
         android:id="@+id/ed_txt_namefood"
-        android:layout_width="wrap_content"
+        android:layout_width="212dp"
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -107,6 +108,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.253" />
+
+    <EditText
+        android:id="@+id/ed_txt_cakory"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
 
     <Spinner
         android:id="@+id/spinner_food"
@@ -120,30 +134,19 @@
         app:layout_constraintVertical_bias="0.337" />
 
     <TextView
-        android:id="@+id/ed_txt_calory"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
-
-    <TextView
         android:id="@+id/txt_cal_g"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:text="cal/g"
         android:textAlignment="center"
-        android:textColor="@color/ff21"
-        android:textSize="25sp"
+        android:textColor="@color/black_weigth"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.863"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
+        app:layout_constraintVertical_bias="0.419" />
 
     <Button
         android:id="@+id/B_Upload_Photo"

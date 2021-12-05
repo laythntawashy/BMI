@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class CompleteInformationActivity extends AppCompatActivity {
-    Button save_date;
+    Button save;
     TextView value;
     TextView value2;
     int count = 0;
@@ -19,12 +19,13 @@ public class CompleteInformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_information);
 
-        save_date = findViewById(R.id.B_save_date);
-        save_date.setOnClickListener(new View.OnClickListener() {
+        save = findViewById(R.id.B_save_date);
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent add = new Intent(CompleteInformationActivity.this,Add_Record.class);
-                startActivity(add);
+                Intent c = new Intent(CompleteInformationActivity.this,Add_Record.class);
+                startActivity(c);
+
             }
         });
 
