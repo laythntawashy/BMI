@@ -40,6 +40,14 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        view_food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent c = new Intent(HomeActivity.this , Food_List_activity.class);
+                startActivity(c);
+            }
+        });
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -75,11 +75,11 @@
     <Button
         android:id="@+id/b_login"
         android:layout_width="304dp"
-        android:layout_height="52dp"
+        android:layout_height="50dp"
         android:background="@color/ff21"
+        android:onClick="login"
         android:text="@string/login"
         android:textStyle="bold"
-        android:onClick="login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

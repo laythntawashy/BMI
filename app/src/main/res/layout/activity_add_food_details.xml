@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/B_savefood"
         android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:text="Save"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -151,7 +151,8 @@
     <Button
         android:id="@+id/B_Upload_Photo"
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
+        android:onClick="Upload_Photo"
         android:text="Upload Photo"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -164,15 +165,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.923" />
 
-    <TextView
-        android:id="@+id/txt_Photo_view"
-        android:layout_width="324dp"
-        android:layout_height="179dp"
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="326dp"
+        android:layout_height="207dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
